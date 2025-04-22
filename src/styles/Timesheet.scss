@@ -1,0 +1,19 @@
+.timesheet-container {
+  padding: 20px;
+
+  .timesheet-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  }
+}

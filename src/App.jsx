@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "./Login";
-import Dashboard from "./Dashboard";
+import EmployeeDashboard from "./Dashboard/EmployeeDashboard";
+import SupervisorDashboard from "./Dashboard/SupervisorDashboard";
+import HRDashboard from "./Dashboard/HRDashboard";
 
 function App() {
   return (
@@ -16,8 +18,16 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
-    path: "/dashboard",
-    element: <Dashboard />,
+    path: "/employee",
+    element: <EmployeeDashboard />,
+  },
+  {
+    path: "/supervisor",
+    element: <SupervisorDashboard />,
+  },
+  {
+    path: "/hr",
+    element: <HRDashboard />,
   },
 ]);
 export default App;

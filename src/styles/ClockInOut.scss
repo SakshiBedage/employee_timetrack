@@ -1,0 +1,42 @@
+.clock-container {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .buttons {
+    margin-bottom: 1rem;
+
+    button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #1976d2;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: #1565c0;
+      }
+    }
+  }
+
+  .info {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+}

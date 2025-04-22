@@ -1,0 +1,29 @@
+.dashboard-container {
+  padding: 2rem;
+  text-align: center;
+
+  .button-group {
+    margin-bottom: 2rem;
+
+    button {
+      margin: 0 1rem;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+
+  .component-section {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 2rem;
+  }
+}
