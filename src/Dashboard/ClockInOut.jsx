@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../styles/ClockInOut.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { clockIn, clockOut } from "../Redux/actions";
 
@@ -30,7 +29,7 @@ const ClockInOut = () => {
     setLocalClockOutTime(now);
 
     const diff = (now - localClockInTime) / (1000 * 60 * 60);
-    const totalHours = parseFloat(diff.toFixed(2));
+    const totalHours = diff.toFixed(2);
 
     dispatch(clockOut(currentUser.name, date, formattedTime, totalHours));
   };

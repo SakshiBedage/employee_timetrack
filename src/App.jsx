@@ -1,3 +1,5 @@
+import "./styles/main.scss";
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Login from "./Login";
 import EmployeeDashboard from "./Dashboard/EmployeeDashboard";

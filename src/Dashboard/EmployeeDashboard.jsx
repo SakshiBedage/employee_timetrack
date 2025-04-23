@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ClockInOut from "./ClockInOut";
 import Timesheet from "./Timesheet";
-import "../styles/EmployeeDashboard.scss";
 import { useSelector } from "react-redux";
 
 const EmployeeDashboard = () => {

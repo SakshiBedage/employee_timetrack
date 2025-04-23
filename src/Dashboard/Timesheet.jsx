@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import "../styles/Timesheet.scss";
 
 const Timesheet = () => {
   const currentUser = useSelector((state) => state.clock.currentUser);
@@ -28,8 +27,8 @@ const Timesheet = () => {
               <tr key={index}>
                 <td>{entry.date}</td>
                 <td>{entry.clockInTime}</td>
-                <td>{entry.clockOutTime}</td>
-                <td>{entry.totalHours}</td>
+                <td>{entry.clockOutTime || "-"}</td>
+                <td>{entry.totalHours || "-"}</td>
               </tr>
             ))}
           </tbody>

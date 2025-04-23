@@ -1,17 +1,20 @@
+@import "../styles/variables";
+
 .login-container {
   width: 500px;
   margin: 80px auto;
   padding: 50px;
-  background-color: #f8f9;
+  background-color: $background-color;
+  border-radius: $container-radius;
 
   h1 {
     text-align: center;
-    color: #333;
+    color: $text-color;
   }
 
   h4 {
     margin: 10px 0 5px;
-    color: #3f0956;
+    color: $heading-color;
   }
 
   input,
@@ -19,26 +22,26 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
 
     &:focus {
-      border-color: #007bff;
-      outline: none;
+      border-color: $primary-color;
     }
   }
+
   button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: $primary-color;
     border: none;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: $border-radius;
     cursor: pointer;
 
     &:hover {
-      background-color: #0056b3;
+      background-color: $primary-hover;
     }
   }
 }
